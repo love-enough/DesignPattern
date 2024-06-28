@@ -5,6 +5,7 @@ public class ForumAccount {
     private String name;
     public ForumAccount(String name) {
         this.name = name;
+        this.state = new PrimaryState(this);
         System.out.println(this.name + "注册成功!");
         System.out.println("------------------------");
     }
